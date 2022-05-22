@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh);
+    background: linear-gradient(to right, #ce96fb, #00c2ba, #037a90);
+    background-blend-mode: color;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    margin: auto 50px;
+}
+.container .box{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 30px 40px;
+    overflow: hidden;
+    background-color: #ffff;
+}
+.container .box .icon{
+    text-align: center;
+    font-size: 28px;
+    background-color: #000;
+    color: #ffff;
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: 1s;
+}
+.container .box .content h3{
+    text-align: center;
+    margin: 20px 0px;
+}
+.container .box .content{
+    position: relative;
+    z-index: 1;
+}
+.container .box .content p{
+    text-align: center;
+}
+.container .box .content .btn{
+    margin-top: 40px;
+    text-align: center;
+}
+.container .box .content a{
+    text-decoration: none;
+    padding: 10px 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+}
+/* Animation start */
+/* ========== Card 1 ========== */
+.container .box:nth-child(1) .icon{
+    background-color: blue;
+    color: #ffff;
+}
+.container .box:nth-child(1):hover h3,
+.container .box:nth-child(1):hover p,
+.container .box:nth-child(1):hover a{
+    color: #ffff;
+}
+.container .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 500px blue;
+    transform: rotateZ(360deg);
+    background-color: #ffff;
+    color: #000;
+}
+/* ========== Card 2 ========== */
+.container .box:nth-child(2) .icon{
+    background-color: brown;
+}
+.container .box:nth-child(2):hover h3,
+.container .box:nth-child(2):hover p,
+.container .box:nth-child(2):hover a{
+    color: #ffff;
+}
+.container .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 500px brown;
+    transform: rotateY(360deg);
+    background-color: #ffff;
+    color: #000;
+}
+/* ========== Card 3 ========== */
+.container .box:nth-child(3) .icon{
+    background-color: orangered;
+}
+.container .box:nth-child(3):hover h3,
+.container .box:nth-child(3):hover p,
+.container .box:nth-child(3):hover a{
+    color: #ffff;
+}
+.container .box:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 500px orangered;
+    transform: rotateX(360deg);
+    background-color: #ffff;
+    color: #000;
+}

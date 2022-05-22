@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Animation</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            font-family: "poppins";
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .logo {
+            width: 180px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            flex: 1;
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 16px;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            transition: width 0.3s;
+        }
+
+        nav ul li:hover::after,
+        nav ul li.active::after {
+            width: 50%;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section{
+            position: absolute;
+            top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="./assets/images/logo.png" alt="" class="logo">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../car/car.html">Animated Car</a></li>
+            <li><a href="../smoky/smoky.html">Smokey Text</a></li>
+            <li><a href="../card2/card2.html">3D Cards</a></li>
+            <li><a href="../neon/neon.html">Neon Effect</a></li>
+            <li><a href="../rings/rings.html">Animated Rings</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="box">
+                <div class="icon">1</div>
+                <div class="content">
+                    <h3>Front-End Development</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quam labore, doloremque aliquam
+                        iure provident! Illum quos inventore nisi. Iste nihil ullam praesentium tempore, veniam ea
+                        commodi ipsa quasi culpa. Ullam fugit, odio nisi fugiat itaque beatae magnam dolorum modi,
+                        repellendus ipsum numquam at quasi nemo repudiandae debitis vitae veritatis!</p>
+                    <div class="btn"><a href="#">Learn More</a></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">2</div>
+                <div class="content">
+                    <h3>Data Entry Specialist</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quam labore, doloremque aliquam
+                        iure provident! Illum quos inventore nisi. Iste nihil ullam praesentium tempore, veniam ea
+                        commodi ipsa quasi culpa. Ullam fugit, odio nisi fugiat itaque beatae magnam dolorum modi,
+                        repellendus ipsum numquam at quasi nemo repudiandae debitis vitae veritatis!</p>
+                    <div class="btn"><a href="#">Learn More</a></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">3</div>
+                <div class="content">
+                    <h3>Content Writer</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quam labore, doloremque aliquam
+                        iure provident! Illum quos inventore nisi. Iste nihil ullam praesentium tempore, veniam ea
+                        commodi ipsa quasi culpa. Ullam fugit, odio nisi fugiat itaque beatae magnam dolorum modi,
+                        repellendus ipsum numquam at quasi nemo repudiandae debitis vitae veritatis!</p>
+                    <div class="btn"><a href="#">Learn More</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

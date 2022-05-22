@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+a{
+    color: #fff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), transparent), url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px 0px;
+    position: relative;
+}
+nav::before{
+    position: absolute;
+    content: "Note";
+    width: 100%;
+    height: 35%;
+    top: 111%;
+    right: -75%;
+    color: darkred;
+    font-size: 30px;
+    font-weight: 600;
+}
+nav::after{
+    position: absolute;
+    content: "Please Visit the links above, to view my animations";
+    width: 100%;
+    height: 24%;
+    top: 170%;
+    right: -75%;
+    color: white;
+    font-size: 13px;
+}
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+}
+nav ul li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    transition: width 0.3s;
+}
+nav ul li:hover::after{
+    width: 50%;
+}
+nav ul li a{
+    text-decoration: none;
+}
+.text-box{
+    position: absolute;
+    color: #fff;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 500;
+}
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(/assets/images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation:  back 20s linear infinite;
+}
+@keyframes back {
+    100%{
+        background-position: 2000px 0px;
+    }
+}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 400;
+}
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box .row a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.text-box .row a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons svg{
+    display: block;
+    margin: 0px 5px;
+    width: 25px;
+}
+.social-icons a:nth-child(3) svg{
+    width: 21px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Rings</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins";
+        }
+
+        body {
+            flex-direction: column;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .logo {
+            width: 180px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            flex: 1;
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 16px;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            transition: width 0.3s;
+        }
+
+        nav ul li:hover::after {
+            width: 50%;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="./assets/images/logo.png" alt="" class="logo">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../car/car.html">Animated Car</a></li>
+            <li><a href="../smoky/smoky.html">Smokey Text</a></li>
+            <li><a href="../cards/cards.html">Animated Cards</a></li>
+            <li><a href="../card2/card2.html">3D Cards</a></li>
+            <li><a href="../neon/neon.html">Neon Effect</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <span style="--i: 1; color: red;"></span>
+        <span style="--i: 2; color: yellow;"></span>
+        <span style="--i: 3; color: blue;"></span>
+        <span style="--i: 4; color: lightblue;"></span>
+        <span style="--i: 5; color: yellowgreen;"></span>
+        <span style="--i: 6; color: aliceblue;"></span>
+        <span style="--i: 7; color: brown;"></span>
+        <span style="--i: 8; color: black;"></span>
+        <span style="--i: 9; color: slateblue;"></span>
+        <span style="--i: 10; color: orchid;"></span>
+    </div>
+</body>
+
+</html>
